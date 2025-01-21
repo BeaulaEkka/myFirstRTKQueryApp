@@ -1,11 +1,11 @@
 
 import './App.css'
-import { useGetPostQuery } from './services/jsonPlaceholderApi'
+import { useGetPostsQuery } from './services/jsonPlaceholderApi'
 
 
 
 function App() {
-  const {data,error,isLoading}=useGetPostQuery()
+  const {data,error,isLoading}=useGetPostsQuery()
 
   if(isLoading)return <p>loading...</p>;
 

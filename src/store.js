@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { jsonPlaceholderApi } from "./services/jsonPlaceholderApi";
 import { setupListeners } from "@reduxjs/toolkit/query";
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
     // reducers
     [jsonPlaceholderApi.reducerPath]: jsonPlaceholderApi.reducer,
